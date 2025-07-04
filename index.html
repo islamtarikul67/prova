@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista di Prelievo</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jsbarcode@3.11.5/dist/JsBarcode.all.min.js"></script>
+</head>
+<body>
+
+    <div class="page-container">
+        <div class="controls no-print">
+            <h1>Carica Lista di Prelievo</h1>
+            <p>Seleziona il file Excel (.xlsx) con le colonne: <strong>Codice, Descrizione, Quantita</strong>.</p>
+            <input type="file" id="excel-file-input" accept=".xlsx, .xls">
+            <button id="process-button">Genera Lista</button>
+            <button id="print-button" style="display:none;">Stampa</button>
+        </div>
+
+        <div id="picking-sheet" class="picking-sheet" style="display:none;">
+            <div class="sheet-header">
+                <div class="company-name">PANOTEC <span class="subtitle">METALWORKING</span></div>
+                <div class="document-title">CONSEGNA / LISTA DI PRELIEVO</div>
+                <div class="header-details">
+                    <span>Cliente: <strong>CAME S.P.A.</strong></span>
+                    <span id="current-date">Data: </span>
+                </div>
+            </div>
+
+            <div class="list-header">
+                CODICI DA PRELEVARE
+            </div>
+
+            <div id="item-list">
+                </div>
+
+            <div class="sheet-footer">
+                <span id="page-info"></span>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
