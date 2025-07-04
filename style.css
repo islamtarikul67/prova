@@ -1,0 +1,174 @@
+/* Stili generali */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f0f2f5;
+    color: #333;
+    line-height: 1.5;
+}
+
+.page-container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+}
+
+/* Stili per la sezione di caricamento */
+.controls {
+    background-color: #fff;
+    padding: 25px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.controls h1 {
+    margin-top: 0;
+}
+
+.controls input[type="file"] {
+    margin: 15px 0;
+}
+
+.controls button {
+    padding: 10px 20px;
+    border: none;
+    background-color: #007bff;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.controls button:hover {
+    background-color: #0056b3;
+}
+
+/* Stili per il foglio di prelievo */
+.picking-sheet {
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #ccc;
+}
+
+.sheet-header {
+    border-bottom: 2px solid #000;
+    padding-bottom: 15px;
+    margin-bottom: 10px;
+}
+
+.company-name {
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+.company-name .subtitle {
+    font-weight: normal;
+    font-size: 0.8em;
+}
+
+.document-title {
+    font-weight: bold;
+    font-size: 1.4em;
+    text-align: center;
+    margin: 10px 0;
+}
+
+.header-details {
+    display: flex;
+    justify-content: space-between;
+}
+
+.list-header {
+    font-weight: bold;
+    padding: 5px 0;
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 10px;
+}
+
+/* Stili per ogni articolo della lista */
+.item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 5px;
+    border-bottom: 1px solid #eee;
+}
+
+.item-info {
+    flex-grow: 1;
+}
+
+.item-code {
+    font-weight: bold;
+    font-size: 1.1em;
+}
+
+.item-description {
+    font-size: 1em;
+    color: #555;
+    margin-top: 5px;
+}
+
+.item-right-panel {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    min-width: 220px;
+    text-align: right;
+}
+
+.barcode-container {
+    margin-bottom: 10px;
+}
+
+.barcode-text {
+    font-family: 'Courier New', Courier, monospace;
+    letter-spacing: 2px;
+    font-size: 0.9em;
+}
+
+.item-quantity {
+    font-size: 1.2em;
+}
+
+.item-quantity span {
+    font-weight: bold;
+}
+
+.sheet-footer {
+    text-align: right;
+    margin-top: 20px;
+    font-size: 0.9em;
+    border-top: 1px solid #ccc;
+    padding-top: 10px;
+}
+
+
+/* STILI PER LA STAMPA */
+@media print {
+    /* Nasconde i controlli e mostra solo il foglio */
+    .no-print {
+        display: none !important;
+    }
+    
+    body {
+        background-color: #fff;
+    }
+
+    .page-container {
+        max-width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+
+    .picking-sheet {
+        border: none;
+        box-shadow: none;
+    }
+
+    /* Evita che un articolo venga spezzato tra due pagine */
+    .item {
+        page-break-inside: avoid;
+    }
+}
