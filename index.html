@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curriculum Vitae - MD Shourov Ahmed</title>
+    <!-- Tailwind CSS for styling -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts: Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        /* Custom styles for an enhanced modern layout optimized for A4 */
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f1f5f9; /* Lighter slate background */
+        }
+        .cv-container {
+            max-width: 8.5in; /* Standard A4/Letter width for printing */
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            border-radius: 0.5rem; /* Slightly smaller radius for a more formal look */
+            overflow: hidden;
+        }
+        .main-content h2 {
+            font-size: 1.125rem; /* 18px */
+            font-weight: 700;
+            color: #1e293b; /* Darker slate */
+            text-transform: uppercase;
+            letter-spacing: 0.08em;
+            border-bottom: 2px solid #6366f1; /* Indigo accent */
+            padding-bottom: 0.5rem;
+            margin-bottom: 1.5rem;
+        }
+        .sidebar h3 {
+            font-size: 1rem; /* 16px */
+            font-weight: 600;
+            color: #cbd5e1;
+            text-transform: uppercase;
+            letter-spacing: 0.08em;
+            border-bottom: 1px solid #475569;
+            padding-bottom: 0.5rem;
+            margin-bottom: 1rem;
+        }
+        .sidebar-icon {
+            width: 1.125rem;
+            height: 1.125rem;
+            margin-right: 0.75rem;
+            color: #94a3b8;
+            flex-shrink: 0;
+        }
+        .job-title {
+            font-weight: 600;
+            color: #334155;
+        }
+        .skill-pill {
+            display: inline-block;
+            background-color: #475569;
+            color: #e2e8f0;
+            padding: 0.25rem 0.75rem;
+            border-radius: 9999px;
+            font-size: 0.75rem;
+            font-weight: 500;
+        }
+    </style>
+</head>
+<body class="p-4 sm:p-6">
+
+    <div class="cv-container mx-auto grid grid-cols-1 md:grid-cols-3 bg-white">
+        
+        <!-- Sidebar (Left Column) -->
+        <aside class="md:col-span-1 bg-slate-800 text-white p-8">
+            <!-- Profile Picture -->
+            <div class="flex justify-center mb-8">
+                <img src="https://i.ibb.co/7x12VPz7/7ffbcd9b-5710-4b84-b54f-3ca04a746fdd.jpg" 
+                     alt="Foto Profilo di MD Shourov Ahmed"
+                     class="rounded-full w-32 h-32 border-4 border-slate-600 object-cover">
+            </div>
+
+            <!-- Contact Info -->
+            <section class="mb-10">
+                <h3>Contatti</h3>
+                <div class="space-y-4 text-slate-300 text-sm">
+                    <div class="flex items-start">
+                        <svg class="sidebar-icon mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path></svg>
+                        <span>+39 328 9422 040</span>
+                    </div>
+                    <div class="flex items-start">
+                        <svg class="sidebar-icon mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
+                        <span>skshourov07@gmail.com</span>
+                    </div>
+                    <div class="flex items-start">
+                        <svg class="sidebar-icon mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path></svg>
+                        <span>Conegliano (TV)</span>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Skills -->
+            <section class="mb-10">
+                <h3>Competenze</h3>
+                <div class="flex flex-wrap gap-2">
+                    <span class="skill-pill">Montaggio</span>
+                    <span class="skill-pill">Assemblaggio</span>
+                    <span class="skill-pill">Controllo qualità</span>
+                    <span class="skill-pill">Precisione</span>
+                    <span class="skill-pill">Lavoro di squadra</span>
+                    <span class="skill-pill">Microsoft Word</span>
+                    <span class="skill-pill">Microsoft Excel</span>
+                </div>
+            </section>
+
+            <!-- Languages -->
+            <section class="mb-10">
+                <h3>Lingue</h3>
+                <div class="text-slate-300 text-sm space-y-2">
+                    <p><span class="font-semibold text-slate-100">Bengalese:</span> Madrelingua</p>
+                    <p><span class="font-semibold text-slate-100">Italiano:</span> Ottimo</p>
+                </div>
+            </section>
+
+            <!-- Education -->
+            <section>
+                <h3>Istruzione</h3>
+                <p class="text-slate-200 text-sm font-medium">Licenza Media</p>
+                <p class="text-slate-400 text-sm">Conseguita all'estero</p>
+            </section>
+        </aside>
+
+        <!-- Main Content (Right Column) -->
+        <main class="md:col-span-2 p-8 sm:p-10">
+            <!-- Header Section -->
+            <header class="mb-12">
+                <h1 class="text-4xl font-bold text-slate-900">MD SHOUROV AHMED</h1>
+                <p class="text-lg text-indigo-600 font-medium mt-2">Magazziniere | Addetto al Carico/Scarico</p>
+            </header>
+
+            <!-- Profile Section -->
+            <section class="mb-12">
+                <h2>Profilo</h2>
+                <p class="text-slate-700 leading-relaxed">
+                    Lavoratore affidabile e preciso, con esperienza in mansioni manuali e ritmi di lavoro sostenuti. Cerco un'opportunità in magazzino per applicare le mie capacità organizzative e la mia manualità.
+                </p>
+            </section>
+
+            <!-- Experience Section -->
+            <section>
+                <h2>Esperienza Professionale</h2>
+                <div class="space-y-8">
+                    <!-- Job 1 -->
+                    <div>
+                        <p class="text-sm text-slate-500 font-medium">Maggio 2024 – Agosto 2024</p>
+                        <h3 class="text-lg job-title mt-1">Addetto al Montaggio Cabine</h3>
+                        <p class="text-slate-600 italic">Fratelli PEDOL – Conegliano (TV)</p>
+                        <ul class="list-disc list-inside text-slate-700 mt-2 ml-4 space-y-1 text-sm">
+                            <li>Montaggio di precisione di cabine per trattori e spazzaneve.</li>
+                            <li>Utilizzo di strumenti da banco e attrezzature per l'assemblaggio.</li>
+                        </ul>
+                    </div>
+                    <!-- Job 2 -->
+                    <div>
+                        <p class="text-sm text-slate-500 font-medium">Dicembre 2023 – Aprile 2024</p>
+                        <h3 class="text-lg job-title mt-1">Lucidatore e Montatore Occhiali</h3>
+                        <p class="text-slate-600 italic">SHI SUIQING – Monfumo (TV)</p>
+                        <ul class="list-disc list-inside text-slate-700 mt-2 ml-4 space-y-1 text-sm">
+                            <li>Lucidatura di occhiali, montaggio lenti e rifinitura del prodotto.</li>
+                            <li>Controllo qualità per garantire il rispetto degli standard aziendali.</li>
+                        </ul>
+                    </div>
+                    <!-- Job 3 -->
+                    <div>
+                        <p class="text-sm text-slate-500 font-medium">Ottobre 2023 – Novembre 2023</p>
+                        <h3 class="text-lg job-title mt-1">Aiuto Cuoco</h3>
+                        <p class="text-slate-600 italic">Ristorante Pizzeria Il Saraceno – Conegliano (TV)</p>
+                        <ul class="list-disc list-inside text-slate-700 mt-2 ml-4 space-y-1 text-sm">
+                            <li>Supporto nella preparazione dei piatti e gestione della postazione.</li>
+                            <li>Mantenimento della pulizia e dell'ordine nell'ambiente di cucina.</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Footer -->
+            <footer class="text-center text-xs text-slate-400 mt-16 pt-6 border-t">
+                <p>Autorizzo il trattamento dei miei dati personali ai sensi del D.Lgs. 196/2003 e del GDPR (Regolamento UE 2016/679).</p>
+            </footer>
+        </main>
+
+    </div>
+
+</body>
+</html>
