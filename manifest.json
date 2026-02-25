@@ -1,0 +1,9 @@
+{
+  "name": "Spese Voice App",
+  "short_name": "SpeseVoice",
+  "start_url": "index.html",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#673ab7",
+  "icons": []
+}
